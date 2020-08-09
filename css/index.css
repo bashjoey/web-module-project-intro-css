@@ -1,0 +1,64 @@
+/*     font-family: 'Chelsea Market', cursive;
+    font-family: 'Roboto Mono', monospace; 
+
+Color the background of items in the navigation bar and footer with the following colors:
+    Plan your Visit: #FF764E
+    Learn About the Park: #5ED3EB
+    Get Involved: #FFCD69
+    Yosemite Park Guide font is called Chelsea Market and can be found on google fonts
+    All other text is Roboto Mono, also available on google fonts
+Color the background of the main text body with #DDB9A3
+Color the background of the footer with #F9E7DC
+Bold the words "current fire restrictions" and "park entrance fee" according to the design file
+Apply box model properties (content, padding, margin, and border) to all content such that your 
+webpage matches the design file. This will include at least:
+    A round image in the header
+    Round corners on navigation and footer items
+    Header image and text side by side
+    Centered content and margins around content
+    Footer image positioning
+    */
+
+* {
+    font-family: 'Roboto Mono', monospace;
+}
+
+h1 {
+    font-family: 'Chelsea Market', cursive;
+}
+
+#roundImg {
+	border-radius: 50%;
+}
+
+#pageContainer {
+	margin: 5% 5%;
+}
+
+nav {
+    color: white;
+    font-size: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin-bottom: 100px;
+}
+
+.navButton {
+    width: 150px;
+    border-radius: 15px;
+    text-align: center;
+    padding: 15px;
+}
+
+.navButton:first-of-type {
+    background-color: #FF764E;
+}
+
+.navButton:nth-of-type(2) {
+	background-color: #5ED3EB;
+}
+
+.navButton:nth-of-type(3) {
+	background-color: #FFCD69;
+}
