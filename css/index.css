@@ -109,7 +109,7 @@ footer {
 }
 
 #tanBox {
-	background-color: #DDB9A3;
+	background-color: #ddb9a3;
 	margin: 5rem 0 5rem 0;
 	padding: 1rem 2rem;
 	display: block;
@@ -161,5 +161,21 @@ footer {
 
 	#tanBox {
 		margin: 2rem 0 5rem 0;
+	}
+}
+
+/*br replacement code sourced from: https://jsfiddle.net/nicooprat/ZHxNA/
+*/
+@media screen and (max-width: 680px) {
+	nav {
+		flex-direction: column;
+		align-items: center;
+	}
+	br {
+		content: ' ';
+	}
+
+	br:after {
+		content: ' ';
 	}
 }
