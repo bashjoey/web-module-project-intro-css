@@ -24,6 +24,10 @@ webpage matches the design file. This will include at least:
 	font-size: 1rem;
 }
 
+body {
+	background-color: #fff;
+}
+
 h1 {
 	font-family: 'Chelsea Market', cursive;
 	font-size: 3.6rem;
@@ -34,7 +38,7 @@ p {
 }
 
 main {
-	margin: 2rem 4rem;
+	margin: 4rem 4rem;
 	display: block;
 }
 
@@ -62,48 +66,70 @@ footer {
 	background-color: #ff764e;
 }
 
+.navButton:first-of-type:hover {
+	background-color: red;
+	color: black;
+}
+
 .navButton:nth-of-type(2) {
 	background-color: #5ed3eb;
+}
+.navButton:nth-of-type(2):hover {
+	background-color: blue;
+	color: black;
 }
 
 .navButton:nth-of-type(3) {
 	background-color: #ffcd69;
 }
 
+.navButton:nth-of-type(3):hover {
+	background-color: orange;
+	color: black;
+}
+
 .iconBox {
-	display: block;
 	text-align: center;
-	margin-top: 2rem;
+	width: 350px;
+	margin: 0 auto;
+	padding: 1rem 0;
 }
 
 .iconBox img {
-	width: 10%;
+	width: 30%;
 }
 
 .iconBoxText {
-	font-size: 1rem;
+	font-size: 1.1rem;
 	text-align: center;
-	margin: 2rem 28rem;
 }
 
 #roundImg {
-	margin-left: 6rem;
-	margin-top: 2rem;
+	width: 300px;
 	border-radius: 50%;
+	margin: 2.5rem 0 0 7rem;
 	float: left;
 }
 
 #headerContent {
 	text-align: center;
 	padding-top: 2.5rem;
-	margin-right: 5rem;
+	margin-right: 3rem;
 }
 
 #tanBox {
-	background-color: tan;
-	margin-top: 5rem;
+	background-color: #ddb9a3;
+	margin: 5em 0 5rem 0;
 	padding: 1rem 2rem;
 	display: block;
+	color: white;
+}
+
+#tanBox:hover {
+	background-color: lightsalmon;
+	border-width: 2px;
+	border-style: dotted;
+	color: black;
 }
 
 #footerImg {
@@ -114,114 +140,38 @@ footer {
 	height: 20rem;
 }
 
-@media only screen and (max-width: 1230px) {
-	.iconBoxText {
-		margin: 3rem 21rem;
-	}
-}
-
-@media only screen and (max-width: 1200px) {
-	.iconBoxText {
-		margin: 3rem 19rem;
-	}
-}
-
-@media only screen and (max-width: 1160px) {
-	.iconBoxText {
-		margin: 3rem 17rem;
-	}
-}
-
-@media only screen and (max-width: 1130px) {
+@media screen and (max-width: 1100px) {
 	h1 {
 		font-size: 3rem;
 	}
-
-	strong {
+	#headerContent p {
 		font-size: 1.1rem;
 	}
-
-	p {
-		font-size: 1.1rem;
-		text-align: center;
+	main {
+		margin-top: 4rem;
 	}
-
-	#headerContent {
-		padding-top: 0;
-	}
-
-	#tanBox {
-		margin-top: 8rem;
-	}
-
-	.iconBoxText {
-		margin: 3rem 16rem;
+	#roundImg {
+		width: 250px;
+		margin: 2.5rem 0 0 6rem;
 	}
 }
 
-@media only screen and (max-width: 1005px) {
-	.navButton {
-		font-size: 1rem;
-		width: 7rem;
-	}
+@media screen and (max-width: 950px) {
 	#roundImg {
 		float: none;
 		display: block;
-		margin-left: auto;
-		margin-right: auto;
+		margin: 0 auto;
 	}
 	#headerContent {
 		display: block;
-		margin-left: auto;
-		margin-right: auto;
-	}
-	#tanBox {
-		margin-top: 3rem;
-	}
-	.iconBox img {
-		width: 12%;
-	}
-
-	.iconBoxText {
-		margin: 3rem 14rem;
+		margin: 0 auto;
+		padding-top: 0;
 	}
 }
-
-@media only screen and (max-width: 850px) {
-	.iconBox img {
-		width: 13%;
-	}
-	.iconBoxText {
-		margin: 3rem 12rem;
-	}
-}
-
-@media only screen and (max-width: 750px) {
-	.iconBox img {
-		width: 14%;
-	}
-	.iconBoxText {
-		margin: 3rem 10rem;
-	}
-}
-
-@media only screen and (max-width: 650px) {
-	.iconBox img {
-		width: 16%;
-	}
-	.iconBoxText {
-		margin: 3rem 8rem;
-	}
-}
-
-@media only screen and (max-width: 550px) {
-	.nav {
-		display: block;
-	}
-	.iconBox img {
-		width: 18%;
-	}
-	.iconBoxText {
-		margin: 3rem 7rem;
+@media screen and (max-width: 700px) {
+	nav {
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
 	}
 }
