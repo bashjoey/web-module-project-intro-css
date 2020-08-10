@@ -135,11 +135,9 @@ footer {
 	h1 {
 		font-size: 3rem;
 	}
-
 	#headerContent p {
 		font-size: 1.1rem;
 	}
-
 	#roundImg {
 		width: 250px;
 	}
@@ -153,28 +151,26 @@ footer {
 		float: none;
 		display: block;
 	}
-
 	#headerContent {
 		margin: 0 auto;
 		display: block;
 	}
-
 	#tanBox {
 		margin: 2rem 0 5rem 0;
 	}
 }
 
-/*br replacement code sourced from: https://jsfiddle.net/nicooprat/ZHxNA/
-*/
 @media screen and (max-width: 680px) {
 	nav {
 		flex-direction: column;
 		align-items: center;
 	}
+	/*
+	br replacement code sourced from: https://jsfiddle.net/nicooprat/ZHxNA/
+	*/
 	br {
 		content: ' ';
 	}
-
 	br:after {
 		content: ' ';
 	}
