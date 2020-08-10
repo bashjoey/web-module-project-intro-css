@@ -89,19 +89,24 @@ footer {
 }
 
 .iconBox {
-	text-align: center;
-	width: 350px;
+	width: 300px;
 	margin: 0 auto;
 	padding: 1rem 0;
 }
 
 .iconBox img {
-	width: 30%;
+	width: 50%;
+	display: block;
+	margin: 0 auto;
 }
 
 .iconBoxText {
 	font-size: 1.1rem;
 	text-align: center;
+}
+
+.iconBoxText:first-of-type {
+	padding-bottom: 50px;
 }
 
 #roundImg {
