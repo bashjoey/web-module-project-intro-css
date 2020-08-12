@@ -180,10 +180,10 @@ footer {
 	br replacement code sourced from: https://jsfiddle.net/nicooprat/ZHxNA/
 	*/
 
-	br {
+	section:first-of-type br {
 		content: ' ';
 	}
-	br:after {
+	section:first-of-type br:after {
 		content: ' ';
 	}
 }
